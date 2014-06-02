@@ -1,0 +1,19 @@
+# coding: utf-8
+
+plugin_name = "ddns.example.com"
+
+############################################################
+def get_name():
+	return plugin_name
+
+############################################################
+def conf(i, p, o):
+	global id, password, other
+	id = i
+	password = p
+	other = o
+	return True
+
+############################################################
+def ddns_update():
+	return True
